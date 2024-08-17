@@ -1,6 +1,6 @@
 import query from '../models/comments.model.js';
 
-const comments =  {
+export default {
   getAll : async (req, res) => {
     console.log("getAll")
     try {
@@ -83,5 +83,17 @@ const comments =  {
   }, 
 }
 
-export default comments;
-
+// Or you can implement like this.
+// export default class Comments {
+//   static async getAll(req, res) {
+//     console.log("getAll")
+//     try {
+//       let result = await query.findAll();
+//       res.json(result);
+//     } catch (error) {
+//       console.error("Error getAll:", error);
+//       res.status(500).json({ error: "Internal server error" });
+//     }
+//   }
+//   /// add more functions ///
+// }
