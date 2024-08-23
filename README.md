@@ -4,22 +4,22 @@ This is an example implementation of a restaurant review application using the E
 
 The following technologies are used:
 
-* MongoDB Atlas for the database
-* Express and Node.JS for the backend API
-* React for the client
+- MongoDB Atlas for the database
+- Express and Node.JS for the backend API
+- React for the client
 
 ## Prerequisites
 
 The following are required:
 
-* MongoDB Atlas account with the sample dataset loaded onto a cluster (includes database sample_restaurants)
-* Node.JS (tested with v12.18.0)
+- MongoDB Atlas account with the sample dataset loaded onto a cluster (includes database sample_restaurants)
+- Node.JS (tested with v18.18.0)
 
 The backend and frontend are setup with npm and npx
 
 ### Backend
 
-Create with ```npm```
+Create with `npm`
 
 ```
 $ mkdir backend
@@ -34,7 +34,7 @@ $ npm install express cors mongodb dotenv
 $ npm install -g nodemon
 ```
 
-Configure the ```.env``` file with the MongoDB Atlas connection URL. This should point to the example ```sample_restaurants``` database that is available to install when a cluster is setup. 
+Configure the `.env` file with the MongoDB Atlas connection URL. This should point to the example `sample_restaurants` database that is available to install when a cluster is setup.
 
 The URL can be obtained within the MongoDB Atlas UI. Select the cluster > Connect > Connect your application.
 
@@ -46,7 +46,7 @@ PORT=5000
 
 ### Frontend
 
-Create with ```npx``` and install the necessary frameworks.
+Create with `npx` and install the necessary frameworks.
 
 ```
 $ npx create-react-app frontend
@@ -75,6 +75,6 @@ Run
 $ npm start
 ```
 
-File changes will be picked automatically without the need to restart. The application starts on port 3000. 
+File changes will be picked automatically without the need to restart. The application starts on port 3000.
 
 Visit <a>http://localhost:3000</a>.
